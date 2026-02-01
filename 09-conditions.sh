@@ -9,7 +9,8 @@ number=$1
 #-ge means greater than or equal to
 #-le means less than or equal to
 
-if [$number -gt 20]; then
+if [ $number -gt 20 ]; then
     echo "given number: $number is greater than 20"
+
 fi 
  

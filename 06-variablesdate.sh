@@ -6,10 +6,10 @@ echo "script executed at: $timestamp"
 
 sleep 10
 
-endtimes=$(date)
+endtimes=$(date +%s) 
 totaltimes=$(($endtimes - $starttimes))
 
-echo "script executed in: $totaltimes" 
+echo "script executed in: $totaltimes"  
 
 
 

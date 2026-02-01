@@ -1,15 +1,15 @@
 #!/bin/bash
 
-starttimes=$(date)
+starttime=$(date +%s)
 
-echo "script executed at: $timestamp"
+echo "script executed at: $starttime"
 
 sleep 10
 
-endtimes=$(date +%s) 
-totaltimes=$(($endtimes - $starttimes))
+endtime=$(date +%s) 
+totaltime=$(($endtime - $starttime))
 
-echo "script executed in: $totaltimes"  
+echo "script executed in: $totaltime"  
 
 
 

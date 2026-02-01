@@ -9,6 +9,7 @@ sleep 10
 endtimes=$(date)
 totaltimes=$(($endtimes - $starttimes))
 
-echo "script executed in: $totaltimes seconds"
+echo "script executed in: $totaltimes" 
+
 
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 userid=$(id -u)
-logfolder="/var/log/shell-script" 
+logfolder= "/var/log/shell-script" 
 
 if [ $userid -ne 0 ]; then
     echo 'please run this script as root user'

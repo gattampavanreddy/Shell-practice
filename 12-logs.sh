@@ -13,10 +13,10 @@ mkdir -p $logsfolder
 #by default shell will not execute, only executed when called
 validate(){
        if [ $1 -ne 0 ]; then
-    echo "$2 failed"
+    echo "$2 failed" |& tee -a $logsfolder
     exit 1
 else
-    echo "$2 successfully"
+    echo "$2 successfully" |& tee -a $logsfolder
 fi 
 
 }

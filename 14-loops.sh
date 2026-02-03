@@ -23,6 +23,6 @@ fi
 
 for package in $@  #sudo sh 14-loops.sh nginx mysql nodejs
 do 
-   dnf install $package -y 
+   dnf install $package -y &>> $logsfolder
    validate $? "$package installation"
 done
